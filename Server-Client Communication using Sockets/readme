@@ -1,0 +1,11 @@
+Purpose:
+
+The purpose of the script is to create a client-server program in which client will send messages and server will receive messages until client sends a 'quit' message. On quit both server and client should close connecion.
+
+Instructions for execution:-
+
+gcc server.c -o server
+gcc client.c -o server
+
+./server /tmp/socket
+./client /tmp/socket

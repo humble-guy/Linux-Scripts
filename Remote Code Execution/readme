@@ -1,0 +1,25 @@
+Steps for running scripts:-
+
+1. First execute kali.sh script to create a DEBIAN package
+
+. kali.sh
+
+This will create a debian package in the pwd.
+
+2. Now run the metasp script and give the same port number, as given on executing above script.
+
+. metasp
+
+
+You can check active seesions by:
+sessions -i
+You can interact with a session using:
+sessions -i session_id
+
+3. Give the package to host
+
+Host installs the package
+
+sudo dpkg -i packagename-versionname
+
+4. Now the /etc/init.d directory of host contains a script myscript.sh whill will be executed on system startup. 
